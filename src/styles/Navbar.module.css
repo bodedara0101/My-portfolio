@@ -1,0 +1,4 @@
+
+.menunone{
+    @apply hover:text-slate-300
+}

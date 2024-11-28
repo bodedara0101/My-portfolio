@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* > *{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #root {
+    height: 100%;
+    width: 100%;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Makes the background cover the entire screen */
+  } 
+
+nav .active{
+    @apply text-white bg-slate-900 rounded-t;
+    position: relative;
+}
+
+.active::after{
+    @apply bg-slate-900;
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 24px;
+    width: 100%;
+}
