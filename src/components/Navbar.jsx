@@ -48,25 +48,27 @@ function Navbar() {
             Contact
           </NavLink>
         </div>
+        <div className="inmenu hidden md:hidden w-full sm:w-[50%] absolute right-0 top-0 bg-neutral-700 h-screen items-end"
+          ref={bar}>
         <div
-          className="dd hidden md:hidden w-[25%] p-5 absolute right-5 top-24 bg-blue-600 text-white rounded-lg"
-          ref={bar}
+          className="dd flex flex-col text-black w-full sm:w-[80%] justify-center rounded-l h-[50%]"
         >
-          <NavLink to="/" className="px-3 text-center">
+          <NavLink to="/" className="px-3 py-2 text-center lnk">
             Home
           </NavLink>
-          <NavLink to="/about" className="px-3 text-center">
+          <NavLink to="/about" className="px-3 py-2 text-center lnk">
             About
           </NavLink>
-          <NavLink to="/projects" className="px-3 text-center">
+          <NavLink to="/projects" className="px-3 py-2 text-center lnk">
             Projects
           </NavLink>
-          <NavLink to="/contact" className="px-3 text-center">
+          <NavLink to="/contact" className="px-3 py-2 text-center lnk">
             Contact
           </NavLink>
         </div>
+        </div>
         <div
-          className="menu px-2 md:hidden inline"
+          className="menu md:hidden inline z-0"
           ref={drop}
           onClick={dropdown}
         >

@@ -29,7 +29,7 @@ nav .active{
     position: relative;
 }
 .dd > .active{
-    @apply text-black bg-inherit border-2 rounded bg-red-100;
+    @apply text-gray-50 bg-inherit rounded-l rounded-r-none backdrop-blur-sm bg-neutral-500;
 }
 
 nav .mm > .active::after{
@@ -40,4 +40,7 @@ nav .mm > .active::after{
     left: 0;
     height: 24px;
     width: 100%;
+}
+.dd > .lnk{
+    @apply hover:bg-neutral-500 rounded-l
 }
