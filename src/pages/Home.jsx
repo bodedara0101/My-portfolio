@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <>
-      <div className="flex justify-between w-full h-[100%] my-auto">
+      <div className="flex sm:flex-row flex-col justify-between w-full h-[100%] my-auto">
         <Helmet>
           <title>Home - Bharat Odedara</title>
           <meta
@@ -39,16 +39,16 @@ function Home() {
             content="Welcome to my portfolio website. Explore my projects, skills, and experience."
           />
         </Helmet>
-        <div className="welcome w-[45%] flex flex-col items-start justify-center h-full border-black gap-5">
-          <h2 className="text-4xl font-bold text-left mb-4 w-full ml-5 text-slate-200">
+        <div className="welcome sm:w-[45%] w-[80%] mx-auto sm:mx-0 flex flex-col items-start sm:justify-center sm:h-full h-[55%] border-black gap-5">
+          <h2 className="sm:text-4xl text-xl font-bold sm:text-left text-center sm:mb-4 w-full text-slate-200 p-5">
             <span className="text-blue-600 font-bold">Hi, I'm</span> Bharat
             Odedara
           </h2>
-          <div className="flex flex-col h-[60%] w-[80%]">
+          <div className="flex flex-col sm:h-[60%] h-[40%] sm:w-[80%] w-full overflow-hidden sm:overflow-auto flex-1">
             <img
               src={profile}
               alt=""
-              className="h-full ml-5 w-[70%] border border-black rounded-r-full"
+              className="flex-grow sm:h-full sm:w-[70%] w-[50%] border border-black sm:rounded-l rounded-full mx-auto sm:mx-0"
               draggable="false"
               onContextMenu={(e) => {
                 alert("Not able to copy");
@@ -56,28 +56,28 @@ function Home() {
               }}
             />
           </div>
-          <span className="text-3xl font-extrabold text-slate-200 pl-5">
+          <span className="sm:text-3xl text-xl font-extrabold text-slate-200 sm:pl-5 flex items-center justify-center sm:justify-start w-full">
             Skills &nbsp;
             {text.split(" ")[0] === "Bharat" ? (
               <Link to="https://github.com/bodedara0101" target="_blank">
-                <span className="text-blue-500 text-3xl relative after:rounded-lg after:bg-orange-400 after:absolute after:w-full after:h-1 after:-bottom-0 after:left-0">
+                <span className="text-blue-500 sm:text-3xl text-xl relative after:rounded-lg after:bg-orange-400 after:absolute after:w-full after:h-1 after:-bottom-0 after:left-0">
                   {text}
                   <Cursor />
                 </span>
               </Link>
             ) : (
-              <span className="text-blue-500 text-3xl relative after:rounded-lg after:bg-orange-400 after:absolute after:w-full after:h-1 after:-bottom-0 after:left-0">
+              <span className="text-blue-500 sm:text-3xl text-xl relative after:rounded-lg after:bg-orange-400 after:absolute after:w-full after:h-1 after:-bottom-0 after:left-0">
                 {text}
                 <Cursor />
               </span>
             )}
           </span>
         </div>
-        <div className="description w-[45%] flex flex-col justify-center gap-5 h-full">
-          <h1 className="text-4xl font-extrabold pl-5 text-blue-600">
+        <div className="description sm:w-[45%] w-[80%] flex flex-col justify-center gap-5 sm:h-full h-[45%] overflow-hidden mx-auto">
+          <h1 className="sm:text-3xl text-xl font-extrabold sm:pl-5 text-blue-600">
             Profile :
           </h1>
-          <p className="text-lg text-justify px-10 indent-10 text-white">
+          <p className="sm:text-lg text-xs text-justify sm:px-10 indent-10 text-white">
             {/* I'm a passionate developer skilled in web technologies and eager to
           build modern, responsive websites and applications. and i continuously
           learning to improve my skills. */}
@@ -86,14 +86,7 @@ function Home() {
             MongoDB, Express.js, React.js, and Node.js. They utilize MongoDB, a
             NoSQL database, for efficient data storage and retrieval. On the
             backend, Express.js is used to create servers and APIs to handle
-            client requests. React.js powers the frontend, allowing developers
-            to build dynamic and interactive user interfaces, while Node.js
-            enables server-side development and efficient handling of
-            asynchronous operations. A MERN stack developer ensures seamless
-            integration between the frontend and backend components, creating
-            cohesive and high-performing applications. They are proficient in
-            JavaScript, RESTful APIs, and version control systems like Git,
-            making them versatile in both development and collaboration.
+            client requests.
           </p>
         </div>
       </div>

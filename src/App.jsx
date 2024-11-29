@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="h-screen bg-slate-900">
         <Navbar />
-        <main className="w-full h-[92%] pt-16 bg-slate-900">
+        <main className="w-full sm:h-[92%] h-[95%] pt-16 bg-slate-900">
           <Analytics />
           <Routes>
             <Route path="*" element={<div className='p-6 flex flex-col mx-auto w-[50%] items-center'><h1 className='text-center'>404 Page Not Found!</h1></div>} />
