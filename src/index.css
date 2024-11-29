@@ -28,8 +28,11 @@ nav .active{
     @apply text-white bg-slate-900 rounded-t;
     position: relative;
 }
+.dd > .active{
+    @apply text-black bg-inherit border-2 rounded bg-red-100;
+}
 
-.active::after{
+nav .mm > .active::after{
     @apply bg-slate-900;
     content: '';
     position: absolute;
