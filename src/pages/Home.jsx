@@ -44,15 +44,17 @@ function Home() {
             <span className="text-blue-600 font-bold">Hi, I'm</span> Bharat
             Odedara
           </h2>
-          <div className="flex flex-col sm:h-[60%] h-[40%] sm:w-[80%] w-full overflow-hidden sm:overflow-auto flex-1">
+          <div className="flex flex-col sm:h-[60%] h-[40%] sm:w-[80%] w-full overflow-hidden flex-1">
             <img
               src={profile}
               alt=""
               className="flex-grow sm:h-full sm:w-[70%] w-[50%] border border-black sm:rounded-l rounded-full mx-auto sm:mx-0"
               draggable="false"
-              onContextMenu={(e) => {
-                alert("Not able to copy");
-                return <h1>Hello</h1>;
+              onMouseOver={(e) => {
+                e.target.style.scale = '105%';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.scale = '100%';
               }}
             />
           </div>

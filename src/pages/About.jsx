@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 
 function About() {
   return (
-    <div className="p-6 h-[100%]">
+    <div className="about p-6 h-[100%]">
       <Helmet>
         <title>About Me - Bharat Odedara</title>
         <meta name="description" content="Learn more about me, my skills, and my journey as a developer." />
