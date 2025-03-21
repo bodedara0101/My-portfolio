@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import profile from "../assets/profile-Photoroom.jpg";
+import profile from "../assets/MyProfile-Photoroom.png";
 
 function Home() {
   const location = useLocation();
@@ -44,11 +44,11 @@ function Home() {
             <span className="text-blue-600 font-bold">Hi, I'm</span> Bharat
             Odedara
           </h2>
-          <div className="flex flex-col sm:h-[60%] h-[40%] sm:w-[80%] w-full overflow-hidden flex-1">
+          <div className="flex flex-col sm:h-[60%] h-[40%] md:w-auto sm:w-[100%] w-full overflow-hidden flex-1">
             <img
               src={profile}
               alt=""
-              className="flex-grow sm:h-full sm:w-[70%] w-[50%] border border-black sm:rounded-l rounded-full mx-auto sm:mx-0"
+              className="flex-grow sm:h-full justify-center items-center sm:w-[100%] w-[50%] border-none sm:rounded-l rounded-full mx-auto sm:mx-0"
               draggable="false"
               onMouseOver={(e) => {
                 e.target.style.scale = '105%';
@@ -59,7 +59,7 @@ function Home() {
             />
           </div>
           <span className="sm:text-3xl text-xl font-extrabold text-slate-200 sm:pl-5 flex items-center justify-center sm:justify-start w-full">
-            Skills &nbsp;
+            Skills : &nbsp;
             {text.split(" ")[0] === "Bharat" ? (
               <Link to="https://github.com/bodedara0101" target="_blank">
                 <span className="text-blue-500 sm:text-3xl text-xl relative after:rounded-lg after:bg-orange-400 after:absolute after:w-full after:h-1 after:-bottom-0 after:left-0">

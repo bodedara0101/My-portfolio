@@ -53,16 +53,16 @@ function Navbar() {
         <div
           className="dd flex flex-col text-black w-full sm:w-[80%] justify-center rounded-l h-[50%]"
         >
-          <NavLink to="/" className="px-3 py-2 text-center lnk">
+          <NavLink to="/" onClick={dropdown} className="px-3 py-2 text-center lnk">
             Home
           </NavLink>
-          <NavLink to="/about" className="px-3 py-2 text-center lnk">
+          <NavLink to="/about" onClick={dropdown} className="px-3 py-2 text-center lnk">
             About
           </NavLink>
-          <NavLink to="/projects" className="px-3 py-2 text-center lnk">
+          <NavLink to="/projects" onClick={dropdown} className="px-3 py-2 text-center lnk">
             Projects
           </NavLink>
-          <NavLink to="/contact" className="px-3 py-2 text-center lnk">
+          <NavLink to="/contact" onClick={dropdown} className="px-3 py-2 text-center lnk">
             Contact
           </NavLink>
         </div>
